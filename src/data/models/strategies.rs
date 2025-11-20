@@ -1,22 +1,21 @@
 pub enum Strategy {
-    "FULL_HOUSE",
-    "NAKED_SINGLE",
-    "HIDDEN_SINGLE",
-    "LOCKED_CANDIDATE_POINTING",
-    "LOCKED_CANDIDATE_CLAIMING",
-    "HIDDEN_PAIRS",
-    "NAKED_PAIRS",
-    "HIDDEN_TRIPLES",
-    "NAKED_TRIPLES",
-    "HIDDEN_QUADS",
-    "NAKED_QUADS",
-    "GUESS"
+    FullHouse,
+    NakedSingle,
+    HiddenSingle,
+    LockedCandidatePointing,
+    LockedCandidateClaiming,
+    HiddenPairs,
+    NakedPairs,
+    HiddenTriples,
+    NakedTriples,
+    HiddenQuads,
+    NakedQuads,
+    GUESS,
 }
-
 pub struct Step {
-    rowIndex: u8,
-    colIndex: u8,
-    value: u8,
-    candidateRemoved: boolean,
-    type: Option<Strategy>
+    row_index: usize,
+    col_index: usize,
+    value: usize,
+    candidate_removed: bool,
+    step_type: Option<Strategy>,
 }
