@@ -13,9 +13,9 @@ pub enum Strategy {
     GUESS,
 }
 pub struct Step {
-    row_index: usize,
-    col_index: usize,
-    value: usize,
-    candidate_removed: bool,
-    step_type: Option<Strategy>,
+    pub row_index: usize,
+    pub col_index: usize,
+    pub value: usize,
+    pub candidate_removed: bool,
+    pub step_type: Option<Strategy>,
 }

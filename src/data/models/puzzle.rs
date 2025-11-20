@@ -16,6 +16,6 @@ pub struct PuzzleDifficulty {
 pub struct Puzzle {
     pub id: String,
     pub cells: [u8; 81],
-    pub candidates: [[u8; 9]; 81],
+    pub candidates: [[bool; 9]; 81],
     pub difficulty: PuzzleDifficulty,
 }
